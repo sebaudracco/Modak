@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "753309251496",
+    "project_id": "modak-edf0f",
+    "storage_bucket": "modak-edf0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753309251496:android:0346dd70b5873556ca0f9d",
+        "android_client_info": {
+          "package_name": "com.sebadracco.modak"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsnT5-MWyfDQJVG0b6B9c5snVP-E-Hykg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

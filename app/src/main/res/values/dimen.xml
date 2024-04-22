@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="page_indicator_margin_top">40dp</dimen>
+    <dimen name="register_icon_margin_top">15dp</dimen>
+    <dimen name="register_title_margin_top">15dp</dimen>
+    <dimen name="register_title_text_size">34sp</dimen>
+    <dimen name="register_request_text_size">20sp</dimen>
+    <dimen name="register_request_margin_top">10dp</dimen>
+    <dimen name="marginQuarter">2dp</dimen>
+    <dimen name="marginHalf">4dp</dimen>
+    <dimen name="marginStandard">8dp</dimen>
+    <dimen name="marginOneHalf">12dp</dimen>
+    <dimen name="marginDouble">16dp</dimen>
+    <dimen name="marginTriple">24dp</dimen>
+    <dimen name="marginQuad">32dp</dimen>
+    <dimen name="marginTen">10dp</dimen>
+    <dimen name="marginTwenty">20dp</dimen>
+    <dimen name="marginSixtyFour">64dp</dimen>
+    <dimen name="marginNinety">90dp</dimen>
+    <dimen name="tv_padding">5dp</dimen>
+    <dimen name="et_padding">10dp</dimen>
+    <dimen name="et_margin">20dp</dimen>
+    <dimen name="cell_margin_top">50</dimen>
+    <dimen name="otp_margin_top">50</dimen>
+    <dimen name="button_padding">5dp</dimen>
+    <dimen name="button_margin_bottom">48dp</dimen>
+    <dimen name="et_email_margin_bottom">60dp</dimen>
+    <dimen name="et_cell_margin_bottom">40dp</dimen>
+    <dimen name="button_width">246dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    <dimen name="tv_otp_padding">7dp</dimen>
+    <dimen name="button_radius">8dp</dimen>
+    <dimen name="otp_retry_text_size">16sp</dimen>
+
+    <dimen name="default_sp_5_2">10sp</dimen>
+    <dimen name="default_sp_5_6">30sp</dimen>
+
+    <dimen name="default_dp_1_1">1dp</dimen>
+    <dimen name="default_dp_1_3">3dp</dimen>
+    <dimen name="default_dp_1_7">7dp</dimen>
+    <dimen name="default_dp_2_1">2dp</dimen>
+    <dimen name="default_dp_2_2">4dp</dimen>
+    <dimen name="default_dp_2_3">6dp</dimen>
+    <dimen name="default_dp_2_7">14dp</dimen>
+    <dimen name="default_dp_2_8">16dp</dimen>
+    <dimen name="default_dp_2_11">22dp</dimen>
+    <dimen name="default_dp_2_17">34dp</dimen>
+    <dimen name="default_dp_2_21">42dp</dimen>
+
+    <dimen name="default_dp_2_9">18dp</dimen>
+
+
+    <dimen name="default_dp_5_1">5dp</dimen>
+    <dimen name="default_dp_5_2">10dp</dimen>
+    <dimen name="default_dp_5_3">15dp</dimen>
+    <dimen name="default_dp_5_4">20dp</dimen>
+    <dimen name="default_dp_5_5">25dp</dimen>
+    <dimen name="default_dp_5_6">30dp</dimen>
+    <dimen name="default_dp_5_7">35dp</dimen>
+    <dimen name="default_dp_5_8">40dp</dimen>
+    <dimen name="default_dp_5_9">45dp</dimen>
+    <dimen name="default_dp_5_10">50dp</dimen>
+    <dimen name="default_dp_5_11">55dp</dimen>
+    <dimen name="default_dp_5_13">65dp</dimen>
+    <dimen name="default_dp_5_15">75dp</dimen>
+    <dimen name="default_dp_5_17">85dp</dimen>
+    <dimen name="default_dp_5_18">90dp</dimen>
+    <dimen name="default_dp_5_19">95dp</dimen>
+    <dimen name="default_dp_5_20">100dp</dimen>
+    <dimen name="default_dp_5_21">105dp</dimen>
+    <dimen name="default_dp_5_23">115dp</dimen>
+    <dimen name="default_dp_5_25">125dp</dimen>
+
+
+    <dimen name="default_dp_4_0">0dp</dimen>
+    <dimen name="default_dp_4_1">4dp</dimen>
+    <dimen name="default_dp_4_2">8dp</dimen>
+    <dimen name="default_dp_4_3">12dp</dimen>
+    <dimen name="default_dp_4_4">16dp</dimen>
+    <dimen name="default_dp_4_5">20dp</dimen>
+    <dimen name="default_dp_4_6">24dp</dimen>
+    <dimen name="default_dp_4_7">28dp</dimen>
+    <dimen name="default_dp_4_8">32dp</dimen>
+    <dimen name="default_dp_4_9">36dp</dimen>
+    <dimen name="default_dp_4_10">40dp</dimen>
+    <dimen name="default_dp_4_11">44dp</dimen>
+    <dimen name="default_dp_4_12">48dp</dimen>
+    <dimen name="default_dp_4_13">52dp</dimen>
+    <dimen name="default_dp_4_14">56dp</dimen>
+    <dimen name="default_dp_4_15">60dp</dimen>
+    <dimen name="default_dp_4_16">64dp</dimen>
+    <dimen name="default_dp_4_17">68dp</dimen>
+
+    <dimen name="default_dp_8_6">48dp</dimen>
+    <dimen name="default_dp_8_7">56dp</dimen>
+    <dimen name="default_dp_8_8">64dp</dimen>
+    <dimen name="default_dp_8_9">72dp</dimen>
+    <dimen name="default_dp_8_11">88dp</dimen>
+
+    <dimen name="default_dp_10_1">10dp</dimen>
+    <dimen name="default_dp_10_2">20dp</dimen>
+    <dimen name="default_dp_10_3">30dp</dimen>
+    <dimen name="default_dp_10_4">40dp</dimen>
+    <dimen name="default_dp_10_5">50dp</dimen>
+    <dimen name="default_dp_10_6">60dp</dimen>
+    <dimen name="default_dp_10_7">70dp</dimen>
+    <dimen name="default_dp_10_8">80dp</dimen>
+    <dimen name="default_dp_10_9">90dp</dimen>
+    <dimen name="default_dp_10_10">100dp</dimen>
+    <dimen name="default_dp_10_11">110dp</dimen>
+    <dimen name="default_dp_10_12">120dp</dimen>
+    <dimen name="default_dp_10_13">130dp</dimen>
+    <dimen name="default_dp_10_14">140dp</dimen>
+    <dimen name="default_dp_10_15">150dp</dimen>
+    <dimen name="default_dp_10_16">160dp</dimen>
+    <dimen name="default_dp_10_18">180dp</dimen>
+    <dimen name="default_dp_10_19">190dp</dimen>
+    <dimen name="default_dp_10_20">200dp</dimen>
+    <dimen name="default_dp_10_21">210dp</dimen>
+    <dimen name="default_dp_10_22">220dp</dimen>
+    <dimen name="default_dp_10_23">230dp</dimen>
+    <dimen name="default_dp_10_24">240dp</dimen>
+    <dimen name="default_dp_10_25">250dp</dimen>
+    <dimen name="default_dp_10_26">260dp</dimen>
+    <dimen name="default_dp_10_27">270dp</dimen>
+    <dimen name="default_dp_10_28">280dp</dimen>
+    <dimen name="default_dp_10_30">300dp</dimen>
+    <dimen name="default_dp_10_32">320dp</dimen>
+    <dimen name="default_dp_10_33">330dp</dimen>
+    <dimen name="default_dp_10_35">350dp</dimen>
+    <dimen name="default_dp_10_39">390dp</dimen>
+    <dimen name="default_dp_168">168dp</dimen>
+    <dimen name="default_dp_366">366dp</dimen>
+
+    <dimen name="default_sp_2_9">18sp</dimen>
+    <dimen name="default_sp_2_8">16sp</dimen>
+    <dimen name="default_sp_2_7">14sp</dimen>
+    <dimen name="default_sp_2_10">20sp</dimen>
+    <dimen name="default_sp_2_13">26sp</dimen>
+    <dimen name="default_sp_2_15">30sp</dimen>
+    <dimen name="default_sp_2_16">32sp</dimen>
+    <dimen name="default_sp_2_17">34sp</dimen>
+    <dimen name="default_sp_4_1">4sp</dimen>
+    <dimen name="default_sp_4_2">8sp</dimen>
+    <dimen name="default_sp_4_3">12sp</dimen>
+    <dimen name="default_sp_4_4">16sp</dimen>
+    <dimen name="default_sp_4_5">20sp</dimen>
+    <dimen name="default_sp_4_6">24sp</dimen>
+    <dimen name="default_sp_4_7">28sp</dimen>
+    <dimen name="default_sp_4_10">40sp</dimen>
+    <dimen name="default_sp_4_12">48sp</dimen>
+
+    <dimen name="default_sp_5_1">10sp</dimen>
+
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="tab_indicator_height">3dp</dimen>
+    <dimen name="tab_indicator_width">66dp</dimen>
+    <dimen name="avatar_margin">16dp</dimen>
+    <dimen name="contact_name_margin">10dp</dimen>
+    <dimen name="contact_name_text_size">16sp</dimen>
+    <dimen name="invite_text_size">14sp</dimen>
+    <dimen name="search_margin_top">24dp</dimen>
+    <dimen name="search_margin_start">16dp</dimen>
+    <dimen name="et_search_width">327dp</dimen>
+
+    <dimen name="dni_validation_view_line_height">1dp</dimen>
+    <dimen name="dni_validation_view_line_margin_bottom">32dp</dimen>
+    <dimen name="dni_validation_document_type_margin_bottom">46dp</dimen>
+    <dimen name="pass_reset_iv_width">87dp</dimen>
+    <dimen name="pass_reset_iv_height">67dp</dimen>
+    <dimen name="dni_validation_document_number_margin_bottom">200dp</dimen>
+
+    <dimen name="pass_reset_otp_code_margin_top">128dp</dimen>
+    <dimen name="et_password_margin">24dp</dimen>
+    <dimen name="zero_dimen">0dp</dimen>
+
+    <dimen name="settings_toolbar_height">96dp</dimen>
+    <dimen name="settings_photo_left">17dp</dimen>
+    <dimen name="settings_photo_top">24dp</dimen>
+    <dimen name="profile_tv_next_iv_margin_left">15dp</dimen>
+    <dimen name="toolbar_tv_margin_top">34dp</dimen>
+    <dimen name="settings_user_text_size">24sp</dimen>
+    <dimen name="setting_logout_btn_margin_bottom">36dp</dimen>
+    <dimen name="setting_logout_btn_margin_horizontal">57dp</dimen>
+
+    <dimen name="profile_toolbar_title_margin_top">10dp</dimen>
+    <dimen name="profile_toolbar_title_margin_left">56dp</dimen>
+    <dimen name="profile_back_arrow_margin_left">20dp</dimen>
+    <dimen name="profile_back_arrow_margin_top">18dp</dimen>
+    <dimen name="profile_settings_photo_top">63dp</dimen>
+    <dimen name="profile_toolbar_subtitle_margin_top">70dp</dimen>
+    <dimen name="profile_settings_toolbar_height">150dp</dimen>
+    <dimen name="profile_border_message_margin_horizontal">18dp</dimen>
+    <dimen name="profile_message_border_margin_top">14dp</dimen>
+    <dimen name="profile_email_not_verified_margin_start">10dp</dimen>
+    <dimen name="profile_email_not_verified_margin_top">11dp</dimen>
+    <dimen name="profile_text_size_small_warning_msg">12sp</dimen>
+    <dimen name="profile_text_size_small_drawable_padding">4dp</dimen>
+    <dimen name="profile_margin_end_verify_email">4dp</dimen>
+    <dimen name="profile_margin_top_verify_email">216dp</dimen>
+    <dimen name="match_constraint">0dp</dimen>
+
+    <dimen name="confirmation_layout_width">327dp</dimen>
+    <dimen name="confirmation_layout_height">536dp</dimen>
+
+    <dimen name="benefit_hight_item_coupon">118dp</dimen>
+    <dimen name="benefit_photo_item_margen_left">142dp</dimen>
+    <dimen name="benefit_tunkicoins_height">27dp</dimen>
+    <dimen name="benfit_item_container_witdh">135dp</dimen>
+    <dimen name="benefit_container_tunkicoins">70dp</dimen>
+    <dimen name="benefit_heigh_group">45dp</dimen>
+
+    <dimen name="width_chronometer">100dp</dimen>
+    <dimen name="height_chronometer">80dp</dimen>
+    <dimen name="width_home_benefits">270dp</dimen>
+    <dimen name="height_home_benefits">128dp</dimen>
+
+
+    //Multi screens sizes
+    <dimen name="dimen_16_24_24">16dp</dimen>
+    <dimen name="dimen_24_32_32">24dp</dimen>
+
+    //Benefit
+    <dimen name="width_cardview_balance">155dp</dimen>
+    <dimen name="height_cardview_balance">100dp</dimen>
+
+    //Home
+    <dimen name="height_wallet_amount">70dp</dimen>
+
+    //Mission
+    <dimen name="width_cardview_mission">165dp</dimen>
+    <dimen name="height_cardview_mission">194dp</dimen>
+
+    //coupon group
+    <dimen name="width_cardview_coupon_group">175dp</dimen>
+    <dimen name="height_cardview_coupon_group">204dp</dimen>
+
+    //Coupon
+    <dimen name="width_cardview_coupon">155dp</dimen>
+    <dimen name="height_cardview_coupon">239dp</dimen>
+    <dimen name="width_cardview_coupon_my">155dp</dimen>
+    <dimen name="height_cardview_coupon_my">270dp</dimen>
+
+    //Coupon code
+    <dimen name="width_img_coupon_code">237dp</dimen>
+    <dimen name="height_img_coupon_code">116dp</dimen>
+
+    <dimen name="pageMargin">10dp</dimen>
+    <dimen name="offset">18dp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">24dp</dimen>
+
+    //Menu item
+    <dimen name="height_item_menu">56dp</dimen>
+
+    //Register photo selfie
+    <dimen name="register_camera_oval_margin">70dp</dimen>
+
+    //new updateable balance
+    <dimen name="margin_sync_to_label_5dp">5dp</dimen>
+    <dimen name="margin_balance_amount_container_to_sync_container">18dp</dimen>
+    <dimen name="default_toolbar_size_56dp">56dp</dimen>
+
+    //new shortcuts
+    <dimen name="item_shortcut_width">64dp</dimen>
+    <dimen name="item_shortcut_height">64dp</dimen>
+
+</resources>

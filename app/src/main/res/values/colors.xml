@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tourPlaceholderBackground">#1e1e1e</color>
+    <color name="gray_underline">#d0d0d0</color>
+    <color name="greyText">#343434</color>
+    <color name="darkGrey">#333333</color>
+</resources>

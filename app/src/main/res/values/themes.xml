@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Modak" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Modak" parent="Base.Theme.Modak" />
+
+    <style name="DetailToolbarExpandedText">
+        <item name="android:fontFamily">@font/ideal_sans_book</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/marginDouble</item>
+        <item name="android:layout_marginTop">@dimen/marginDouble</item>
+        <item name="android:layout_marginEnd">@dimen/marginDouble</item>
+    </style>
+</resources>

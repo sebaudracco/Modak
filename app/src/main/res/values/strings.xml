@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Modak</string>
+    <string name="main_title">Modak test app</string>
+    <string name="retry_again">Again</string>
+    <string name="header_string">header:title</string>
+    <string name="no_internet_limited_content">Bad connection!</string>
+    <string name="general_error_message">Something wrong!</string>
+</resources>

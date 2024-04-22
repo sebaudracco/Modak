@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/default_dp_4_4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/default_dp_10_32"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/default_dp_10_32"
+        android:paddingStart="@dimen/default_dp_4_6"
+        android:paddingTop="@dimen/default_dp_4_2"
+        android:paddingEnd="@dimen/default_dp_4_6"
+        android:paddingBottom="@dimen/default_dp_4_6">
+
+        <ImageView
+            android:id="@+id/iv_error"
+            android:layout_width="@dimen/default_dp_8_7"
+            android:layout_height="@dimen/default_dp_8_7"
+            android:layout_marginTop="@dimen/default_dp_4_6"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_dp_4_4"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_error"
+            tools:text="Titulo de dialogo" />
+
+        <TextView
+            android:id="@+id/lbl_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_dp_4_4"
+            android:gravity="center"
+            android:paddingStart="@dimen/default_dp_4_2"
+            android:paddingEnd="@dimen/default_dp_4_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_title"
+            tools:text="Mensajes del dialogo" />
+
+        <Button
+            android:id="@+id/btn_affirmative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/default_dp_4_8"
+            android:text="yes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_subtitle" />
+
+        <TextView
+            android:id="@+id/btn_alternative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_dp_8_7"
+            android:layout_marginTop="@dimen/default_dp_4_4"
+            android:gravity="center"
+            android:text="No"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_affirmative" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

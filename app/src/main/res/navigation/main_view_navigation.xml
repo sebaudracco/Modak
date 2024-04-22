@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view_navigation"
+    app:startDestination="@id/main_view_entry">
+
+    <fragment
+        android:id="@+id/main_view_entry"
+        android:name="com.sebadracco.modak.main.view.MainFragment"
+        android:label="MainViewEntry"
+        tools:layout="@layout/main_view_fragment">
+    </fragment>
+
+</navigation>

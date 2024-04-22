@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/item_root"
+    android:background="@color/greyText"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/main_photo_image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/character_type_text"
+        style="@style/DetailToolbarExpandedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_photo_image" />
+
+
+    <TextView
+        android:id="@+id/description_value_text"
+        style="@style/DetailToolbarExpandedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Description"
+        app:layout_constraintTop_toBottomOf="@+id/main_photo_image" />
+
+    <TextView
+        android:id="@+id/date_value_text"
+        style="@style/DetailToolbarExpandedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Date"
+        app:layout_constraintTop_toBottomOf="@+id/description_value_text" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_dp_1_1"
+        android:layout_marginStart="@dimen/default_dp_4_6"
+        android:layout_marginEnd="@dimen/default_dp_4_6"
+        android:layout_marginTop="@dimen/default_dp_4_6"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_value_text"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

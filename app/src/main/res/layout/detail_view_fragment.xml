@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyText"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:elevation="4dp"
+        app:navigationIcon="@drawable/ic_toolbar_back"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:scaleType="matrix"
+            app:layout_constraintDimensionRatio="H,375:220"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            tools:background="@drawable/dashboard" />
+
+        <TextView
+            android:id="@+id/expandedTitle"
+            style="@style/DetailToolbarExpandedText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            tools:text="Expanded Title" />
+
+        <TextView
+            android:id="@+id/metaData"
+            android:layout_width="0dp"
+            style="@style/DetailToolbarExpandedText"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginDouble"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="@dimen/marginDouble"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/expandedTitle"
+            tools:text="June 30, 1:00pm" />
+
+        <Button
+            android:id="@+id/registerToday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginDouble"
+            android:layout_marginTop="@dimen/marginStandard"
+            android:layout_marginEnd="@dimen/marginDouble"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/metaData"/>
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/DetailToolbarExpandedText"
+            android:textSize="16dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginDouble"
+            android:layout_marginTop="@dimen/marginDouble"
+            android:layout_marginRight="@dimen/marginDouble"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/registerToday"
+            tools:text="What’s in store to explore? Studio art-making, visits by a guest artist, or a gallery activity station? Where will the Artist’s Studio pop up next? Visit the Family Room on the day of your visit to discover what’s planned." />
+
+        <TextView
+            android:id="@+id/visitWebsiteToRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginDouble"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/marginDouble"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description" />
+
+        <TextView
+            android:id="@+id/throughDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/DetailToolbarExpandedText"
+            android:layout_marginLeft="@dimen/marginDouble"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/marginDouble"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/visitWebsiteToRegister"
+            tools:text="Through August 5, 2018" />
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/DetailToolbarExpandedText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginDouble"
+            android:layout_marginRight="@dimen/marginDouble"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/throughDate"
+            tools:text="Ryan learning center" />
+
+
+
+
+        <include
+            android:id="@+id/not_network"
+            layout="@layout/components_errors_dialog_connection"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/generic_error"
+            layout="@layout/components_error_service"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/progress"
+            layout="@layout/custom_loading"
+            android:layout_width="421dp"
+            android:layout_height="726dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <include layout="@layout/custom_loading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
