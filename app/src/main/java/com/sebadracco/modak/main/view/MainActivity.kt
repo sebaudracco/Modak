@@ -5,7 +5,4 @@ import com.sebadracco.modak.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
 
-    override fun viewOnReady() {
-        super.viewOnReady()
-    }
 }

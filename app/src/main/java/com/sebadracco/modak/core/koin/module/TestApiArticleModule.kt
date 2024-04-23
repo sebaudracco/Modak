@@ -55,7 +55,7 @@ fun providerHttpClient(
     httpClientBuilder.addInterceptor(apiInterceptor)
     return httpClientBuilder.build()
 }
-public fun generateBasicRequest(
+fun generateBasicRequest(
     chain: Interceptor.Chain
 ): Request.Builder {
     return chain.request().newBuilder()

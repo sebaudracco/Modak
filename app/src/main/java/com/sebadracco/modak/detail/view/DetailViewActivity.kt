@@ -33,11 +33,11 @@ class DetailViewActivity : BaseActivity<ActivityDetailBinding>() {
     companion object {
         const val INPUT_VIEW_DATA_ACTIVITY_KEY = "inputViewData"
 
-        fun getCallingIntent(context: Context?): Intent? {
+        fun getCallingIntent(context: Context?): Intent {
             return Intent(context, DetailViewActivity::class.java)
         }
 
-        fun getIntent(activity: FragmentActivity, args: DetailViewInput): Intent? {
+        fun getIntent(activity: FragmentActivity, args: DetailViewInput): Intent {
             val intent = Intent(activity, DetailViewActivity::class.java)
             intent.putExtra(INPUT_VIEW_DATA_ACTIVITY_KEY, args)
             return intent

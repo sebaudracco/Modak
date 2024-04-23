@@ -42,13 +42,13 @@ class MainFragment : BaseFragment<MainViewFragmentBinding>() {
     private fun showlistOfArtWork(event: Event<List<DetailEntityResponse>?>) {
         event.getContentIfNotHandled().let { it ->
             it?.apply {
-                it?.let { results ->
+                it.let { results ->
                     if (results.isEmpty()) {
                         getScreenError()
                     } else {
                         artWork = results
                         adapter.let {
-                            it.dataList = artWork as List<DetailEntityResponse>?
+                            it.dataList = artWork
                             it.context = requireActivity()
                             it.setData(artWork)
                             it.notifyDataSetChanged()

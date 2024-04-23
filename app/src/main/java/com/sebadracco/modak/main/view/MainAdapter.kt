@@ -56,7 +56,7 @@ class MainAdapter(
                 .load(it)
                 .centerCrop()
                 .placeholder(R.drawable.circular_placeholder)
-                .into(holder.ivIcon);
+                .into(holder.ivIcon)
         }
 
     }

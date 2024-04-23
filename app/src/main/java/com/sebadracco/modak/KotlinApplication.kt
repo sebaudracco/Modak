@@ -38,7 +38,7 @@ object KotlinApplication {
     }
 
     fun getModules(): List<Module> {
-        return KotlinApplication.concatenate(
+        return concatenate(
             TestCommonsModule.getModules(),
         )
     }

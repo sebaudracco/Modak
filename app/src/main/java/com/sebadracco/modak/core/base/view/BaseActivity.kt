@@ -38,7 +38,4 @@ abstract class BaseActivity<T : ViewBinding> :
         return true
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-    }
 }
