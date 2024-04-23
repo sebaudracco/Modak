@@ -1,5 +1,5 @@
 
-import com.sebadracco.core.modules.base.dialog.MessageError
+import com.sebadracco.modak.core.base.dialog.MessageError
 import java.io.Serializable
 
 class ExceptionModel : Exception, Serializable {

@@ -4,8 +4,6 @@ import IMainRepository
 import IMainService
 import MainRepository
 import MainUseCase
-import android.content.Context
-import com.sebadracco.modak.core.base.util.SharePreferencesManager
 import com.sebadracco.modak.core.koin.module.RETROFIT_API_AUTH
 import com.sebadracco.modak.main.viewmodel.MainBindingDelegate
 import com.sebadracco.modak.main.viewmodel.MainViewModel
@@ -22,15 +20,12 @@ val mainViewModule: Module = module {
     viewModel {
         MainViewModel(
             mainViewUseCase = get(),
-            sharedPreferences = get(),
             bindingDelegate = get()
         )
     }
 
-    factory { provideSharedPreferences(get()) }
     factory { providerMainViewBindingDelegate() }
     factory { provideRepository(get()) }
-
 
 
     //Inject service
@@ -49,9 +44,7 @@ val mainViewModule: Module = module {
 }
 
 
-fun provideSharedPreferences(applicationContext: Context): SharePreferencesManager {
-    return SharePreferencesManager(applicationContext)
-}
+
 
 fun provideRepository(
     iService: IMainService): MainRepository {
@@ -70,6 +63,7 @@ fun providerMainViewUseCase(mainViewRepository: IMainRepository): MainUseCase {
 fun providerMainViewService(retrofit: Retrofit): IMainService {
     return retrofit.create(IMainService::class.java)
 }
+
 
 
 

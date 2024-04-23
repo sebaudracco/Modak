@@ -1,6 +1,5 @@
 package com.sebadracco.modak.core.base
 
-import com.contentful.vault.SyncConfig
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
@@ -15,7 +14,6 @@ import java.util.concurrent.TimeUnit
 
 val apiTestModule = module {
     single { providerHttpLoggingInterceptor() }
-    single { providerContentfulClient() }
     single { ApiInterceptor() }
 }
 
@@ -47,15 +45,7 @@ fun providerHttpLoggingInterceptor(): HttpLoggingInterceptor {
     return logging
 }
 
-fun providerContentfulClient(): SyncConfig {
-    return SyncConfig
-        .builder()
-        .setSpaceId("BuildConfig.CI_CONTENTFUL_SPACE")
-        .setAccessToken("BuildConfig.CI_CONTENTFUL_TOKEN")
-        .setInvalidate(false)
-        .setEnvironment("BuildConfig.CI_CONTENTFUL_ENV")
-        .build()
-}
+
 
 class ApiInterceptor : Interceptor {
 

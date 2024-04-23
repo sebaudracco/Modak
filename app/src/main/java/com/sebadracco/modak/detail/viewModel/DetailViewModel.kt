@@ -2,10 +2,7 @@ package com.sebadracco.modak.detail.viewModel
 
 import BaseViewModel
 import androidx.lifecycle.viewModelScope
-import com.sebadracco.modak.core.base.util.SharePreferencesManager
 import com.sebadracco.modak.detail.usecase.DetailUseCase
-import com.sebadracco.modak.main.viewmodel.MainBindingDelegate
-import com.sebadracco.modak.main.viewmodel.MainPresenterDelegate
 import kotlinx.coroutines.launch
 
 class DetailViewModel (

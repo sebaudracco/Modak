@@ -28,16 +28,13 @@ class MainAdapter(
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         val data = dataList!![position]
         holder.textName.text = data.title
-        holder.textDescription.text = if (data.titleDisplay != null) {
+        holder.textDescription.text = if (data.listDescription != null) {
             HtmlCompat.fromHtml(
-                data.titleDisplay,
+                data.listDescription,
                 HtmlCompat.FROM_HTML_MODE_LEGACY
             )
         } else {
-            HtmlCompat.fromHtml(
-                "UnAvailable Information",
-                HtmlCompat.FROM_HTML_MODE_LEGACY
-            )
+            "UnAvailable Description"
         }
 
 
@@ -50,12 +47,9 @@ class MainAdapter(
                 HtmlCompat.FROM_HTML_MODE_LEGACY
             )
         } else {
-            HtmlCompat.fromHtml(
-                "UnAvailable Information",
-                HtmlCompat.FROM_HTML_MODE_LEGACY
-            )
+            "UnAvailable Date"
         }
-            data.date
+        data.date
         data.imageUrl?.let {
             Glide
                 .with(context)

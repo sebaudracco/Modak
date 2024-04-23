@@ -50,7 +50,7 @@ class MainFragment : BaseFragment<MainViewFragmentBinding>() {
                         adapter.let {
                             it.dataList = artWork as List<DetailEntityResponse>?
                             it.context = requireActivity()
-                            it.setData(artWork!!)
+                            it.setData(artWork)
                             it.notifyDataSetChanged()
                         }
                     }
@@ -65,6 +65,7 @@ class MainFragment : BaseFragment<MainViewFragmentBinding>() {
         bindingView.genericError.root.toVisible()
         bindingView.genericError.tvActionServiceError.setOnClickListener {
             bindingView.genericError.root.toGone()
+            initViews()
         }
     }
 
@@ -72,6 +73,7 @@ class MainFragment : BaseFragment<MainViewFragmentBinding>() {
         bindingView.notNetwork.root.toVisible()
         bindingView.notNetwork.btnReload.setOnClickListener {
             bindingView.notNetwork.root.toGone()
+            initViews()
         }
     }
 

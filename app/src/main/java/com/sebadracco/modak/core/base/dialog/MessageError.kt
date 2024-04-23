@@ -1,4 +1,4 @@
-package com.sebadracco.core.modules.base.dialog
+package com.sebadracco.modak.core.base.dialog
 
 import java.io.Serializable
 

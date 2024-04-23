@@ -1,6 +1,5 @@
 package com.sebadracco.modak.core.koin.module
 
-import AppPreferencesRepository
 import com.sebadracco.modak.core.base.generateCustomClient
 import com.sebadracco.modak.core.base.providerRetrofit
 import okhttp3.Interceptor
@@ -15,7 +14,7 @@ const val HTTP_CLIENT_AUTH = "OkHttpClientAuth"
 
 val apiAuthModule = module {
     //Auth Api
-    single(named(HTTP_CLIENT_AUTH)) { providerHttpClientAuth(get(), get()) }
+    single(named(HTTP_CLIENT_AUTH)) { providerHttpClientAuth(get()) }
 
     single(named(RETROFIT_API_AUTH)) {
         providerRetrofit(
@@ -27,8 +26,7 @@ val apiAuthModule = module {
 }
 
 fun providerHttpClientAuth(
-    httpLoggingInterceptor: HttpLoggingInterceptor?,
-    appPreferencesRepository: AppPreferencesRepository
+    httpLoggingInterceptor: HttpLoggingInterceptor?
 ): OkHttpClient {
     val httpClientBuilder = generateCustomClient(TIMEOUT_TRANSACTIONAL)
     httpClientBuilder.addInterceptor { chain: Interceptor.Chain ->

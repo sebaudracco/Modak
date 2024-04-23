@@ -11,8 +11,14 @@ data class DetailResponse(
     @SerializedName("title") val title: String,
     @SerializedName("title_display") val titleDisplay: String,
     @SerializedName("image_url") val imageUrl: String?,
-    @SerializedName("description") val description: String,
+    @SerializedName("description") val description: String?,
     @SerializedName("short_description") val shortDescription: String?,
     @SerializedName("location") val location: String?,
-    @SerializedName("id") val id: Int
+    @SerializedName("id") val id: Int,
+    @SerializedName("date_display")
+    val date: String?,
+    @SerializedName("list_description")
+    val listDescription: String?,
+    @SerializedName("api_link")
+    val link: String?,
 )

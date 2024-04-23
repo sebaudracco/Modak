@@ -1,7 +1,7 @@
 import com.google.gson.annotations.SerializedName
 
 
-data class ApiSearchResultRawA(
+data class ApiSearchResult(
     @SerializedName("data") val internalData: List<DetailEntityResponse>
 )
 
@@ -13,7 +13,10 @@ data class DetailEntityResponse(
     @SerializedName("short_description") val shortDescription: String?,
     @SerializedName("location") val location: String?,
     @SerializedName("id") val id: Int,
-    @SerializedName("date_display") val date: String?
+    @SerializedName("date_display") val date: String?,
+    @SerializedName("list_description") val listDescription: String?,
+    @SerializedName("api_link") val link: String?,
+
 )
 
 

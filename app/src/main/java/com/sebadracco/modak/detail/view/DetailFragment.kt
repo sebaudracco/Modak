@@ -65,11 +65,15 @@ class DetailFragment : BaseFragment<DetailViewFragmentBinding>() {
                 artWork = detail.detailData
                 setImagequality(detail.detailData.imageUrl)
                 bindingView.expandedTitle.text = detail.detailData.title
-                bindingView.description.text = detail.detailData.description
-                HtmlCompat.fromHtml(
-                    detail.detailData.description,
-                    HtmlCompat.FROM_HTML_MODE_LEGACY
-                )
+                bindingView.description.text = if (detail.detailData.description != null) {
+                    HtmlCompat.fromHtml(
+                        detail.detailData.description,
+                        HtmlCompat.FROM_HTML_MODE_LEGACY
+                    )
+                } else {
+                    "UnAvailable Description"
+                }
+                bindingView.metaData.text = detail.detailData.link
                 bindingView.toolbar.title = detail.detailData.title
                 bindingView.toolbar.setTitleTextColor(
                     ContextCompat.getColor(

@@ -8,9 +8,7 @@ abstract class BaseViewModel(
     open val bindingDelegate: BaseBindingDelegate,
     private val presentationDelegate: BasePresenterDelegate
 ) : ViewModel() {
-    val appPreferencesRepository: AppPreferencesRepository
-    by lazy { KoinContextHandler.get().get<AppPreferencesRepository>() }
-
+    
     fun callLogout() {
         viewModelScope.launch {
             presentationDelegate.showProgressView()

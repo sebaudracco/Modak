@@ -4,12 +4,10 @@ import BaseViewModel
 import DetailEntityResponse
 import MainUseCase
 import androidx.lifecycle.viewModelScope
-import com.sebadracco.modak.core.base.util.SharePreferencesManager
 import kotlinx.coroutines.launch
 
 class MainViewModel(
     private val mainViewUseCase: MainUseCase,
-    private val sharedPreferences: SharePreferencesManager,
     override val bindingDelegate: MainBindingDelegate,
     private val presenterDelegate: MainPresenterDelegate = MainPresenterDelegate(
         bindingDelegate
@@ -26,22 +24,6 @@ class MainViewModel(
             }
         }
     }
-
-
-    fun showProgressPostValue() {
-        bindingDelegate.showProgressPostValue()
-    }
-
-    fun hideProgressPostValue() {
-        bindingDelegate.hideProgressPostValue()
-    }
-
-
-    fun getEmptyList(): List<DetailEntityResponse> {
-        return emptyList()
-    }
-
-
 
 
 }
