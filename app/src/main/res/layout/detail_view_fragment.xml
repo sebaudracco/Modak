@@ -18,12 +18,13 @@
     <ImageView
         android:id="@+id/image"
         android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:contentDescription="@null"
         android:scaleType="matrix"
         android:layout_marginStart="@dimen/marginDouble"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="@dimen/marginDouble"
+        android:layout_marginBottom="@dimen/marginDouble"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
@@ -31,7 +32,7 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="342dp"
+        android:layout_height="300dp"
         android:layout_marginStart="@dimen/marginDouble"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="@dimen/marginDouble"
@@ -158,7 +159,7 @@
             <include layout="@layout/custom_loading" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>
-    
+
     <include
         android:id="@+id/progress"
         layout="@layout/custom_loading"
